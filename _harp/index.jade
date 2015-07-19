@@ -33,6 +33,9 @@
       each post, slug in public.posts._data
         h1: a(href="/posts/#{ slug }")= post.title
         //- != excerpt(partial("posts/" + slug))
+        
+        
+script(src="https://code.jquery.com/jquery-2.1.4.min.js")        
 script.
   $('.projects-toggle').click(function() {
     $('.essays').hide();
