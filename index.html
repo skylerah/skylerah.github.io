@@ -1,1 +1,9 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="/main.css"></head><body><h1>Welcome to Harp.</h1><h3>This is yours to own. Enjoy.</h3></body></html>
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/main.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script></head><body><div class="content"><div class="selection-group"><h1> <a href="#" class="projects-toggle">PROJECTS</a><br><a href="#" class="essays-toggle">ESSAYS</a><br><a href="#">BLOG</a><br><a href="#" class="info-toggle">INFO</a></h1></div><div style="text-align: right; font-size: 0.6em" class="active-selection"><div style="display: none" class="projects"><h1> <a href="http://stayalert.org/" target="none">stayalert</a><br><a href="http://whetherwords.com/" target="none">whetherwords</a><br><a href="http://www.shapesocial.net/" target="none">shape social</a><br><a>airwaves</a><br><a>jumpgate dotfm</a><br><a href="http://www.everetthydraulics.com/" target="none">everett hydraulics</a></h1></div><div style="display: none" class="essays"> <h1><a href="/posts/rose-by-any-other-name">A Rose By Any Other Name</a></h1><h1><a href="/posts/the-fucking-big">The Fucking Big</a></h1></div></div></div><script>$('.projects-toggle').click(function() {
+  $('.essays').hide();
+  $('.projects').show();
+});
+
+$('.essays-toggle').click(function() {
+  $('.projects').hide();
+  $('.essays').show();
+});</script></body></html>
