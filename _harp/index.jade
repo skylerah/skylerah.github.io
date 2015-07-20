@@ -33,16 +33,32 @@
       each post, slug in public.posts._data
         h1: a(href="/posts/#{ slug }")= post.title
         //- != excerpt(partial("posts/" + slug))
+    .info(style="display: none;")
+      h1 
+        | skyler hartle
+        br
+        | maker/webdev/writer
+        br 
+        | skyler@shapesocial.net
+        br
+        a(href="http://twitter.com/skylerhartle") tw: @skylerhartle
         
         
 script(src="https://code.jquery.com/jquery-2.1.4.min.js")        
 script.
   $('.projects-toggle').click(function() {
+    $('.info').hide();
     $('.essays').hide();
     $('.projects').show();
   });
   
   $('.essays-toggle').click(function() {
+    $('.info').hide();
     $('.projects').hide();
     $('.essays').show();
+  });
+  $('.info-toggle').click(function() {
+    $('.essays').hide();
+    $('.projects').hide();
+    $('.info').show();
   });

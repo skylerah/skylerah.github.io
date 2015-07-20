@@ -1,11 +1,17 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/main.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script></head><body><div class="content"><div class="selection-group"><h1> <a href="#" class="projects-toggle">PROJECTS</a><br><a href="#" class="essays-toggle">ESSAYS</a><br><a href="#">BLOG</a><br><a href="#" class="info-toggle">INFO</a></h1></div><div style="text-align: right; font-size: 0.6em" class="active-selection"><div style="display: none" class="projects"><h1> <a href="http://stayalert.org/" target="none">stayalert</a><br><a href="http://whetherwords.com/" target="none">whetherwords</a><br><a href="http://www.shapesocial.net/" target="none">shape social</a><br><a>airwaves</a><br><a>jumpgate dotfm</a><br><a href="http://www.everetthydraulics.com/" target="none">everett hydraulics</a></h1></div><div style="display: none" class="essays"> <h1><a href="/posts/rose-by-any-other-name">A Rose By Any Other Name</a></h1>
-<h1><a href="/posts/the-fucking-big">The Fucking Big</a></h1>
-</div></div></div><script src="https://code.jquery.com/jquery-2.1.4.min.js">       </script><script>$('.projects-toggle').click(function() {
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/main.css"><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script></head><body><div class="content"><div class="selection-group"><h1> <a href="#" class="projects-toggle">PROJECTS</a><br><a href="#" class="essays-toggle">ESSAYS</a><br><a href="#">BLOG</a><br><a href="#" class="info-toggle">INFO</a></h1></div><div style="text-align: right; font-size: 0.6em" class="active-selection"><div style="display: none" class="projects"><h1> <a href="http://stayalert.org/" target="none">stayalert</a><br><a href="http://whetherwords.com/" target="none">whetherwords</a><br><a href="http://www.shapesocial.net/" target="none">shape social</a><br><a>airwaves</a><br><a>jumpgate dotfm</a><br><a href="http://www.everetthydraulics.com/" target="none">everett hydraulics</a></h1></div><div style="display: none" class="essays"> <h1><a href="/posts/rose-by-any-other-name">A Rose By Any Other Name</a></h1><h1><a href="/posts/the-fucking-big">The Fucking Big</a></h1></div><div style="display: none" class="info"><h1> 
+skyler hartle<br>maker/webdev/writer<br>skyler@shapesocial.net<br><a href="http://twitter.com/skylerhartle">tw: @skylerhartle</a></h1></div></div></div><script src="https://code.jquery.com/jquery-2.1.4.min.js">       </script><script>$('.projects-toggle').click(function() {
+  $('.info').hide();
   $('.essays').hide();
   $('.projects').show();
 });
 
 $('.essays-toggle').click(function() {
+  $('.info').hide();
   $('.projects').hide();
   $('.essays').show();
+});
+$('.info-toggle').click(function() {
+  $('.essays').hide();
+  $('.projects').hide();
+  $('.info').show();
 });</script></body></html>
