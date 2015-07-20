@@ -30,8 +30,8 @@
         br
         a(href="http://www.everetthydraulics.com/") everett hydraulics
     .essays(style="display: none;")  
-      each post, slug in public.posts._data
-        h1: a(href="/posts/#{ slug }")= post.title
+      each essay, slug in public.essays._data
+        h1: a(href="/essays/#{ slug }")= essay.title
         //- != excerpt(partial("posts/" + slug))
     .info(style="display: none;")
       h1 
