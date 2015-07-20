@@ -18,17 +18,17 @@
   .active-selection(style="text-align: right; font-size: 0.6em;")
     .projects(style="display: none;")
       h1 
-        a(href="http://stayalert.org/" target="none") stayalert
+        a(href="http://stayalert.org/") stayalert
         br
-        a(href="http://whetherwords.com/" target="none") whetherwords
+        a(href="http://whetherwords.com/") whetherwords
         br 
-        a(href="http://www.shapesocial.net/" target="none") shape social
+        a(href="http://www.shapesocial.net/") shape social
         br 
         a airwaves
         br 
         a jumpgate dotfm
         br
-        a(href="http://www.everetthydraulics.com/" target="none") everett hydraulics
+        a(href="http://www.everetthydraulics.com/") everett hydraulics
     .essays(style="display: none;")  
       each post, slug in public.posts._data
         h1: a(href="/posts/#{ slug }")= post.title
