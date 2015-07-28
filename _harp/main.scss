@@ -1,6 +1,6 @@
 html {
-  font-family: 'Helvetica', 'Arial';
-  background-color: black;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #030C1F;
   color: white;
 }
 
@@ -16,6 +16,9 @@ body {
     a:hover {
       color: #ff85cb;
       }
+    a:visited {
+      color: #ff85cb;
+    }
   }
 }
 

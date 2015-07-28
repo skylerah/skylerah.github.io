@@ -18,17 +18,19 @@
   .active-selection(style="text-align: right; font-size: 0.6em;")
     .projects(style="display: none;")
       h1 
-        a(href="http://stayalert.org/") stayalert
+        a(href="http://stayalert.org/") stayalert [ js+reactjs+node ]
         br
-        a(href="http://whetherwords.com/") whetherwords
+        a(href="http://whetherwords.com/") whetherwords [ js+node ]
         br 
-        a(href="http://www.shapesocial.net/") shape social
+        a(href="http://www.shapesocial.net/") shape social [ rails ]
         br 
-        a airwaves
+        a airwaves [ js+node+psql ]
         br 
-        a jumpgate dotfm
+        a jumpgate dotfm [ js+node+mongodb ]
         br
-        a(href="http://www.everetthydraulics.com/") everett hydraulics
+        a(href="http://www.everetthydraulics.com/") everett hydraulics [ php+wp ]
+        br
+        a(href="#") skyler hartle dotcom [ js+harp ]
     .essays(style="display: none;")  
       each essay, slug in public.essays._data
         h1: a(href="/essays/#{ slug }")= essay.title
@@ -37,7 +39,7 @@
       h1 
         | skyler hartle
         br
-        |web dev // writer
+        |web dev // essayist
         br 
         | skyler@shapesocial.net
         br
