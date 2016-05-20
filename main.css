@@ -1,1 +1,21 @@
-html{font-family:'Ubuntu',sans-serif;background-color:#030C1F;color:white}body{padding:20px;padding-top:0}body h1{font-size:3.5em}body h1 a{color:white;text-decoration:none}body h1 a:hover{color:#ff85cb}body h1 a:visited{color:#ff85cb}@media only screen and (max-device-width:320px){body h1{font-size:2.5em}}
+html {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #030C1F;
+  color: white; }
+
+body {
+  padding: 20px;
+  padding-top: 0px; }
+  body h1 {
+    font-size: 3.5em; }
+    body h1 a {
+      color: white;
+      text-decoration: none; }
+    body h1 a:hover {
+      color: #ff85cb; }
+    body h1 a:visited {
+      color: #ff85cb; }
+
+@media only screen and (max-device-width: 320px) {
+  body h1 {
+    font-size: 2.5em; } }
